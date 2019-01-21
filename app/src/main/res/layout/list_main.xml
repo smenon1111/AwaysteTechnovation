@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dispose_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnGoToDonateLst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/awayste_logo"
+        android:layout_alignStart="@+id/txtAddItem"
+        android:text="@string/awayste_logo"
+        android:layout_alignLeft="@+id/txtAddItem"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/awayste_logo"
+        android:layout_width="73dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/awayste_logo"
+        app:srcCompat="@drawable/awayste" />
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGoToDonateLst"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="@string/list_title"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lstDonate"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="202dp"
+        android:background="@android:color/background_light">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/txtDonate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lstDonate"
+        android:contentDescription="@string/txtDonate"
+        android:ems="10"
+        android:fontFamily="@font/salsa"
+        android:text="@string/txtDonate"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/lstRecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_above="@+id/txtCompost"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"></ListView>
+
+    <TextView
+        android:id="@+id/txtRecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lstRecycle"
+        android:contentDescription="@string/txtRecycle"
+        android:ems="10"
+        android:fontFamily="@font/salsa"
+        android:text="@string/txtRecycle"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/lstCompost"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/txtCompost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lstCompost"
+        android:contentDescription="@string/txtCompost"
+        android:ems="10"
+        android:fontFamily="@font/salsa"
+        android:text="@string/txtCompost"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtAddItem"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="122dp"
+        android:contentDescription="@string/txtAddItem"
+        android:hint="@string/txtAddItem"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnAddDonate"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/lstDonate"
+        android:layout_marginTop="194dp"
+        android:text="@string/btnAddDonate"
+        android:layout_alignLeft="@+id/lstDonate" />
+
+    <Button
+        android:id="@+id/btnAddCompost"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/btnAddDonate"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnAddCompost" />
+
+    <Button
+        android:id="@+id/btnAddRecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignEnd="@+id/lstDonate"
+        android:layout_alignTop="@+id/btnAddDonate"
+        android:text="@string/btnAddRecycle"
+        android:layout_alignRight="@+id/lstDonate" />
+
+</RelativeLayout>

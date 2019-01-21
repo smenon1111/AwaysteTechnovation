@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Minted</string>
+    <string name="txtDispose" >Dipose</string>
+    <string name="awayste_logo">Yumi</string>
+    <string name="txtList">List</string>
+    <string name="txtInfo">Info</string>
+    <string name="awayste">Awayste</string>
+    <string name="txtDispose2">Dispose_pg2</string>
+    <string name="noDonate">Items you can not donate:</string>
+    <string name="usableCondition">Is this item in usable condition?</string>
+    <string name="noButton">No</string>
+    <string name="yesButton">Yes</string>
+    <string name="list_title">Lists</string>
+    <string name="lstCompost">Compost</string>
+    <string name="tltDonate">Donate</string>
+    <string name="btnAddDonate">Donate</string>
+    <string name="btnAddCompost">Compost</string>
+    <string name="btnAddRecycle">Recycle</string>
+    <string name="tltRecycle">Recycle</string>
+    <string name="tltCompost">Compost</string>
+    <string name="txtAddItem">Which item would you like to add?</string>
+    <string name="txtAddItem2">Which item would you like to add?</string>
+    <string name="txtDonate">Donate</string>
+    <string name="txtRecycle">Recycle</string>
+    <string name="txtCompost">Compost</string>
+
+
+    <string-array name="Categories">
+        <item>Donate</item>
+        <item>Recycle</item>
+        <item>Compost</item>
+
+    </string-array>
+
+</resources>
